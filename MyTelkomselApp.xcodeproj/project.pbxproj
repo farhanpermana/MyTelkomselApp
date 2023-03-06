@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		455031B629B5987C00B41DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B529B5987C00B41DC2 /* AppDelegate.swift */; };
 		455031B829B5987C00B41DC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B729B5987C00B41DC2 /* SceneDelegate.swift */; };
-		455031BA29B5987C00B41DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B929B5987C00B41DC2 /* ViewController.swift */; };
+		455031BA29B5987C00B41DC2 /* PaketInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B929B5987C00B41DC2 /* PaketInternetController.swift */; };
 		455031BD29B5987C00B41DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455031BB29B5987C00B41DC2 /* Main.storyboard */; };
 		455031BF29B5987F00B41DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455031BE29B5987F00B41DC2 /* Assets.xcassets */; };
 		455031C229B5987F00B41DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455031C029B5987F00B41DC2 /* LaunchScreen.storyboard */; };
 		455031CD29B5987F00B41DC2 /* MyTelkomselAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031CC29B5987F00B41DC2 /* MyTelkomselAppTests.swift */; };
 		455031D729B5987F00B41DC2 /* MyTelkomselAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031D629B5987F00B41DC2 /* MyTelkomselAppUITests.swift */; };
 		455031D929B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031D829B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift */; };
+		455031F929B59CB900B41DC2 /* CarouselTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031F829B59CB900B41DC2 /* CarouselTableCell.swift */; };
+		455031FD29B59CFD00B41DC2 /* CarouselCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031FB29B59CFD00B41DC2 /* CarouselCollectionCell.swift */; };
+		455031FE29B59CFE00B41DC2 /* CarouselCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 455031FC29B59CFD00B41DC2 /* CarouselCollectionCell.xib */; };
+		4550320329B5A0F300B41DC2 /* PaketInternetTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550320129B5A0F300B41DC2 /* PaketInternetTitleCell.swift */; };
+		4550320429B5A0F300B41DC2 /* PaketInternetTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4550320229B5A0F300B41DC2 /* PaketInternetTitleCell.xib */; };
+		45859DD029B5C21200D77EDA /* LanggananTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45859DCE29B5C21200D77EDA /* LanggananTitleCell.swift */; };
+		45859DD129B5C21200D77EDA /* LanggananTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45859DCF29B5C21200D77EDA /* LanggananTitleCell.xib */; };
+		45859DD529B5C84B00D77EDA /* LanggananTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45859DD429B5C84B00D77EDA /* LanggananTableCell.swift */; };
+		45859DD829B5C87900D77EDA /* LanggananCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45859DD629B5C87900D77EDA /* LanggananCollectionCell.swift */; };
+		45859DD929B5C87900D77EDA /* LanggananCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45859DD729B5C87900D77EDA /* LanggananCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +49,7 @@
 		455031B229B5987C00B41DC2 /* MyTelkomselApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTelkomselApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		455031B529B5987C00B41DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		455031B729B5987C00B41DC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		455031B929B5987C00B41DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		455031B929B5987C00B41DC2 /* PaketInternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketInternetController.swift; sourceTree = "<group>"; };
 		455031BC29B5987C00B41DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		455031BE29B5987F00B41DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455031C129B5987F00B41DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		455031D229B5987F00B41DC2 /* MyTelkomselAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTelkomselAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		455031D629B5987F00B41DC2 /* MyTelkomselAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTelkomselAppUITests.swift; sourceTree = "<group>"; };
 		455031D829B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTelkomselAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		455031F829B59CB900B41DC2 /* CarouselTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTableCell.swift; sourceTree = "<group>"; };
+		455031FB29B59CFD00B41DC2 /* CarouselCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionCell.swift; sourceTree = "<group>"; };
+		455031FC29B59CFD00B41DC2 /* CarouselCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionCell.xib; sourceTree = "<group>"; };
+		4550320129B5A0F300B41DC2 /* PaketInternetTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketInternetTitleCell.swift; sourceTree = "<group>"; };
+		4550320229B5A0F300B41DC2 /* PaketInternetTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaketInternetTitleCell.xib; sourceTree = "<group>"; };
+		45859DCE29B5C21200D77EDA /* LanggananTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanggananTitleCell.swift; sourceTree = "<group>"; };
+		45859DCF29B5C21200D77EDA /* LanggananTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanggananTitleCell.xib; sourceTree = "<group>"; };
+		45859DD429B5C84B00D77EDA /* LanggananTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanggananTableCell.swift; sourceTree = "<group>"; };
+		45859DD629B5C87900D77EDA /* LanggananCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanggananCollectionCell.swift; sourceTree = "<group>"; };
+		45859DD729B5C87900D77EDA /* LanggananCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanggananCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +119,11 @@
 		455031B429B5987C00B41DC2 /* MyTelkomselApp */ = {
 			isa = PBXGroup;
 			children = (
+				455031E729B5990D00B41DC2 /* Pages */,
+				455031E629B598FE00B41DC2 /* Models */,
+				455031E529B598DF00B41DC2 /* Assets */,
 				455031B529B5987C00B41DC2 /* AppDelegate.swift */,
 				455031B729B5987C00B41DC2 /* SceneDelegate.swift */,
-				455031B929B5987C00B41DC2 /* ViewController.swift */,
-				455031BB29B5987C00B41DC2 /* Main.storyboard */,
-				455031BE29B5987F00B41DC2 /* Assets.xcassets */,
 				455031C029B5987F00B41DC2 /* LaunchScreen.storyboard */,
 				455031C329B5987F00B41DC2 /* Info.plist */,
 			);
@@ -125,6 +145,144 @@
 				455031D829B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift */,
 			);
 			path = MyTelkomselAppUITests;
+			sourceTree = "<group>";
+		};
+		455031E529B598DF00B41DC2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				455031BE29B5987F00B41DC2 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		455031E629B598FE00B41DC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		455031E729B5990D00B41DC2 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				455031EC29B599FA00B41DC2 /* Pembayaran Berhasil Page */,
+				455031EA29B5999900B41DC2 /* Beli Paket Page */,
+				455031E929B5996200B41DC2 /* Paket Internet Page */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		455031E929B5996200B41DC2 /* Paket Internet Page */ = {
+			isa = PBXGroup;
+			children = (
+				455031EE29B59A4300B41DC2 /* View */,
+				455031ED29B59A3C00B41DC2 /* ViewModel */,
+			);
+			path = "Paket Internet Page";
+			sourceTree = "<group>";
+		};
+		455031EA29B5999900B41DC2 /* Beli Paket Page */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Beli Paket Page";
+			sourceTree = "<group>";
+		};
+		455031EC29B599FA00B41DC2 /* Pembayaran Berhasil Page */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Pembayaran Berhasil Page";
+			sourceTree = "<group>";
+		};
+		455031ED29B59A3C00B41DC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				455031B929B5987C00B41DC2 /* PaketInternetController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		455031EE29B59A4300B41DC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45859DD229B5C7FC00D77EDA /* LangananCell */,
+				455031F329B59BA900B41DC2 /* BelajarTitleCell */,
+				455031F229B59BA200B41DC2 /* PopularTitleCell */,
+				455031F129B59B8D00B41DC2 /* LanggananKamuTitleCell */,
+				455031F029B59B3200B41DC2 /* CarouselCell */,
+				455031EF29B59AD500B41DC2 /* PaketInternetTitleCell */,
+				455031BB29B5987C00B41DC2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		455031EF29B59AD500B41DC2 /* PaketInternetTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				4550320129B5A0F300B41DC2 /* PaketInternetTitleCell.swift */,
+				4550320229B5A0F300B41DC2 /* PaketInternetTitleCell.xib */,
+			);
+			path = PaketInternetTitleCell;
+			sourceTree = "<group>";
+		};
+		455031F029B59B3200B41DC2 /* CarouselCell */ = {
+			isa = PBXGroup;
+			children = (
+				455031FA29B59CBF00B41DC2 /* CarouselCollectionCell */,
+				455031F829B59CB900B41DC2 /* CarouselTableCell.swift */,
+			);
+			path = CarouselCell;
+			sourceTree = "<group>";
+		};
+		455031F129B59B8D00B41DC2 /* LanggananKamuTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				45859DCE29B5C21200D77EDA /* LanggananTitleCell.swift */,
+				45859DCF29B5C21200D77EDA /* LanggananTitleCell.xib */,
+			);
+			path = LanggananKamuTitleCell;
+			sourceTree = "<group>";
+		};
+		455031F229B59BA200B41DC2 /* PopularTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PopularTitleCell;
+			sourceTree = "<group>";
+		};
+		455031F329B59BA900B41DC2 /* BelajarTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BelajarTitleCell;
+			sourceTree = "<group>";
+		};
+		455031FA29B59CBF00B41DC2 /* CarouselCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				455031FB29B59CFD00B41DC2 /* CarouselCollectionCell.swift */,
+				455031FC29B59CFD00B41DC2 /* CarouselCollectionCell.xib */,
+			);
+			path = CarouselCollectionCell;
+			sourceTree = "<group>";
+		};
+		45859DD229B5C7FC00D77EDA /* LangananCell */ = {
+			isa = PBXGroup;
+			children = (
+				45859DD329B5C81A00D77EDA /* LanggananCollectionCell */,
+				45859DD429B5C84B00D77EDA /* LanggananTableCell.swift */,
+			);
+			path = LangananCell;
+			sourceTree = "<group>";
+		};
+		45859DD329B5C81A00D77EDA /* LanggananCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				45859DD629B5C87900D77EDA /* LanggananCollectionCell.swift */,
+				45859DD729B5C87900D77EDA /* LanggananCollectionCell.xib */,
+			);
+			path = LanggananCollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +389,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45859DD129B5C21200D77EDA /* LanggananTitleCell.xib in Resources */,
 				455031C229B5987F00B41DC2 /* LaunchScreen.storyboard in Resources */,
+				4550320429B5A0F300B41DC2 /* PaketInternetTitleCell.xib in Resources */,
+				45859DD929B5C87900D77EDA /* LanggananCollectionCell.xib in Resources */,
+				455031FE29B59CFE00B41DC2 /* CarouselCollectionCell.xib in Resources */,
 				455031BF29B5987F00B41DC2 /* Assets.xcassets in Resources */,
 				455031BD29B5987C00B41DC2 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +420,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455031BA29B5987C00B41DC2 /* ViewController.swift in Sources */,
+				455031F929B59CB900B41DC2 /* CarouselTableCell.swift in Sources */,
+				455031FD29B59CFD00B41DC2 /* CarouselCollectionCell.swift in Sources */,
+				45859DD529B5C84B00D77EDA /* LanggananTableCell.swift in Sources */,
+				45859DD029B5C21200D77EDA /* LanggananTitleCell.swift in Sources */,
+				455031BA29B5987C00B41DC2 /* PaketInternetController.swift in Sources */,
 				455031B629B5987C00B41DC2 /* AppDelegate.swift in Sources */,
 				455031B829B5987C00B41DC2 /* SceneDelegate.swift in Sources */,
+				4550320329B5A0F300B41DC2 /* PaketInternetTitleCell.swift in Sources */,
+				45859DD829B5C87900D77EDA /* LanggananCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
