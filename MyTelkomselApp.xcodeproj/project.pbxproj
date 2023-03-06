@@ -26,6 +26,8 @@
 		45859DD529B5C84B00D77EDA /* LanggananTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45859DD429B5C84B00D77EDA /* LanggananTableCell.swift */; };
 		45859DD829B5C87900D77EDA /* LanggananCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45859DD629B5C87900D77EDA /* LanggananCollectionCell.swift */; };
 		45859DD929B5C87900D77EDA /* LanggananCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45859DD729B5C87900D77EDA /* LanggananCollectionCell.xib */; };
+		45FAE09929B5D8C0003FA9AD /* PopularTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FAE09729B5D8C0003FA9AD /* PopularTitleCell.swift */; };
+		45FAE09A29B5D8C0003FA9AD /* PopularTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45FAE09829B5D8C0003FA9AD /* PopularTitleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		45859DD429B5C84B00D77EDA /* LanggananTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanggananTableCell.swift; sourceTree = "<group>"; };
 		45859DD629B5C87900D77EDA /* LanggananCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanggananCollectionCell.swift; sourceTree = "<group>"; };
 		45859DD729B5C87900D77EDA /* LanggananCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanggananCollectionCell.xib; sourceTree = "<group>"; };
+		45FAE09729B5D8C0003FA9AD /* PopularTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTitleCell.swift; sourceTree = "<group>"; };
+		45FAE09829B5D8C0003FA9AD /* PopularTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularTitleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,8 @@
 		455031F229B59BA200B41DC2 /* PopularTitleCell */ = {
 			isa = PBXGroup;
 			children = (
+				45FAE09729B5D8C0003FA9AD /* PopularTitleCell.swift */,
+				45FAE09829B5D8C0003FA9AD /* PopularTitleCell.xib */,
 			);
 			path = PopularTitleCell;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			files = (
 				45859DD129B5C21200D77EDA /* LanggananTitleCell.xib in Resources */,
 				455031C229B5987F00B41DC2 /* LaunchScreen.storyboard in Resources */,
+				45FAE09A29B5D8C0003FA9AD /* PopularTitleCell.xib in Resources */,
 				4550320429B5A0F300B41DC2 /* PaketInternetTitleCell.xib in Resources */,
 				45859DD929B5C87900D77EDA /* LanggananCollectionCell.xib in Resources */,
 				455031FE29B59CFE00B41DC2 /* CarouselCollectionCell.xib in Resources */,
@@ -420,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FAE09929B5D8C0003FA9AD /* PopularTitleCell.swift in Sources */,
 				455031F929B59CB900B41DC2 /* CarouselTableCell.swift in Sources */,
 				455031FD29B59CFD00B41DC2 /* CarouselCollectionCell.swift in Sources */,
 				45859DD529B5C84B00D77EDA /* LanggananTableCell.swift in Sources */,

@@ -38,6 +38,8 @@ class PaketInternetController: UIViewController {
         
         paketInternetTable.register(LanggananTableCell.self, forCellReuseIdentifier: LanggananTableCell.identifier)
         
+        paketInternetTable.register(UINib(nibName: "PopularTitleCell", bundle: nil), forCellReuseIdentifier: PopularTitleCell.identifier)
+        
         paketInternetTable.separatorStyle = .none
         paketInternetTable.delegate = self
         paketInternetTable.dataSource = self
@@ -61,6 +63,8 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
             return 40
         case 3:
             return 190
+        case 4:
+            return 40
         default:
             return 0
         }
@@ -97,7 +101,12 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
             
             cell.setupTable()
             return cell
-//        case .titlePopular:
+        case .titlePopular:
+            guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: PopularTitleCell.identifier) as? PopularTitleCell else {
+                return UITableViewCell()
+            }
+            
+            return cell
 //        case .listPopular:
 //        case .titleVoucher:
 //        case .listVoucher:
