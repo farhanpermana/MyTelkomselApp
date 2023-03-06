@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		455031B629B5987C00B41DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B529B5987C00B41DC2 /* AppDelegate.swift */; };
+		455031B829B5987C00B41DC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B729B5987C00B41DC2 /* SceneDelegate.swift */; };
+		455031BA29B5987C00B41DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031B929B5987C00B41DC2 /* ViewController.swift */; };
+		455031BD29B5987C00B41DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455031BB29B5987C00B41DC2 /* Main.storyboard */; };
+		455031BF29B5987F00B41DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455031BE29B5987F00B41DC2 /* Assets.xcassets */; };
+		455031C229B5987F00B41DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455031C029B5987F00B41DC2 /* LaunchScreen.storyboard */; };
+		455031CD29B5987F00B41DC2 /* MyTelkomselAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031CC29B5987F00B41DC2 /* MyTelkomselAppTests.swift */; };
+		455031D729B5987F00B41DC2 /* MyTelkomselAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031D629B5987F00B41DC2 /* MyTelkomselAppUITests.swift */; };
+		455031D929B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455031D829B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		455031C929B5987F00B41DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455031AA29B5987C00B41DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 455031B129B5987C00B41DC2;
+			remoteInfo = MyTelkomselApp;
+		};
+		455031D329B5987F00B41DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455031AA29B5987C00B41DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 455031B129B5987C00B41DC2;
+			remoteInfo = MyTelkomselApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		455031B229B5987C00B41DC2 /* MyTelkomselApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTelkomselApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		455031B529B5987C00B41DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		455031B729B5987C00B41DC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		455031B929B5987C00B41DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		455031BC29B5987C00B41DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		455031BE29B5987F00B41DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		455031C129B5987F00B41DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		455031C329B5987F00B41DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455031C829B5987F00B41DC2 /* MyTelkomselAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTelkomselAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		455031CC29B5987F00B41DC2 /* MyTelkomselAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTelkomselAppTests.swift; sourceTree = "<group>"; };
+		455031D229B5987F00B41DC2 /* MyTelkomselAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTelkomselAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		455031D629B5987F00B41DC2 /* MyTelkomselAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTelkomselAppUITests.swift; sourceTree = "<group>"; };
+		455031D829B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTelkomselAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		455031AF29B5987C00B41DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455031C529B5987F00B41DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455031CF29B5987F00B41DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		455031A929B5987C00B41DC2 = {
+			isa = PBXGroup;
+			children = (
+				455031B429B5987C00B41DC2 /* MyTelkomselApp */,
+				455031CB29B5987F00B41DC2 /* MyTelkomselAppTests */,
+				455031D529B5987F00B41DC2 /* MyTelkomselAppUITests */,
+				455031B329B5987C00B41DC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		455031B329B5987C00B41DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				455031B229B5987C00B41DC2 /* MyTelkomselApp.app */,
+				455031C829B5987F00B41DC2 /* MyTelkomselAppTests.xctest */,
+				455031D229B5987F00B41DC2 /* MyTelkomselAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		455031B429B5987C00B41DC2 /* MyTelkomselApp */ = {
+			isa = PBXGroup;
+			children = (
+				455031B529B5987C00B41DC2 /* AppDelegate.swift */,
+				455031B729B5987C00B41DC2 /* SceneDelegate.swift */,
+				455031B929B5987C00B41DC2 /* ViewController.swift */,
+				455031BB29B5987C00B41DC2 /* Main.storyboard */,
+				455031BE29B5987F00B41DC2 /* Assets.xcassets */,
+				455031C029B5987F00B41DC2 /* LaunchScreen.storyboard */,
+				455031C329B5987F00B41DC2 /* Info.plist */,
+			);
+			path = MyTelkomselApp;
+			sourceTree = "<group>";
+		};
+		455031CB29B5987F00B41DC2 /* MyTelkomselAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				455031CC29B5987F00B41DC2 /* MyTelkomselAppTests.swift */,
+			);
+			path = MyTelkomselAppTests;
+			sourceTree = "<group>";
+		};
+		455031D529B5987F00B41DC2 /* MyTelkomselAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				455031D629B5987F00B41DC2 /* MyTelkomselAppUITests.swift */,
+				455031D829B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift */,
+			);
+			path = MyTelkomselAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		455031B129B5987C00B41DC2 /* MyTelkomselApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 455031DC29B5987F00B41DC2 /* Build configuration list for PBXNativeTarget "MyTelkomselApp" */;
+			buildPhases = (
+				455031AE29B5987C00B41DC2 /* Sources */,
+				455031AF29B5987C00B41DC2 /* Frameworks */,
+				455031B029B5987C00B41DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTelkomselApp;
+			productName = MyTelkomselApp;
+			productReference = 455031B229B5987C00B41DC2 /* MyTelkomselApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		455031C729B5987F00B41DC2 /* MyTelkomselAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 455031DF29B5987F00B41DC2 /* Build configuration list for PBXNativeTarget "MyTelkomselAppTests" */;
+			buildPhases = (
+				455031C429B5987F00B41DC2 /* Sources */,
+				455031C529B5987F00B41DC2 /* Frameworks */,
+				455031C629B5987F00B41DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				455031CA29B5987F00B41DC2 /* PBXTargetDependency */,
+			);
+			name = MyTelkomselAppTests;
+			productName = MyTelkomselAppTests;
+			productReference = 455031C829B5987F00B41DC2 /* MyTelkomselAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		455031D129B5987F00B41DC2 /* MyTelkomselAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 455031E229B5987F00B41DC2 /* Build configuration list for PBXNativeTarget "MyTelkomselAppUITests" */;
+			buildPhases = (
+				455031CE29B5987F00B41DC2 /* Sources */,
+				455031CF29B5987F00B41DC2 /* Frameworks */,
+				455031D029B5987F00B41DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				455031D429B5987F00B41DC2 /* PBXTargetDependency */,
+			);
+			name = MyTelkomselAppUITests;
+			productName = MyTelkomselAppUITests;
+			productReference = 455031D229B5987F00B41DC2 /* MyTelkomselAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		455031AA29B5987C00B41DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					455031B129B5987C00B41DC2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					455031C729B5987F00B41DC2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 455031B129B5987C00B41DC2;
+					};
+					455031D129B5987F00B41DC2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 455031B129B5987C00B41DC2;
+					};
+				};
+			};
+			buildConfigurationList = 455031AD29B5987C00B41DC2 /* Build configuration list for PBXProject "MyTelkomselApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 455031A929B5987C00B41DC2;
+			productRefGroup = 455031B329B5987C00B41DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				455031B129B5987C00B41DC2 /* MyTelkomselApp */,
+				455031C729B5987F00B41DC2 /* MyTelkomselAppTests */,
+				455031D129B5987F00B41DC2 /* MyTelkomselAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		455031B029B5987C00B41DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455031C229B5987F00B41DC2 /* LaunchScreen.storyboard in Resources */,
+				455031BF29B5987F00B41DC2 /* Assets.xcassets in Resources */,
+				455031BD29B5987C00B41DC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455031C629B5987F00B41DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455031D029B5987F00B41DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		455031AE29B5987C00B41DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455031BA29B5987C00B41DC2 /* ViewController.swift in Sources */,
+				455031B629B5987C00B41DC2 /* AppDelegate.swift in Sources */,
+				455031B829B5987C00B41DC2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455031C429B5987F00B41DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455031CD29B5987F00B41DC2 /* MyTelkomselAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455031CE29B5987F00B41DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455031D729B5987F00B41DC2 /* MyTelkomselAppUITests.swift in Sources */,
+				455031D929B5987F00B41DC2 /* MyTelkomselAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		455031CA29B5987F00B41DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 455031B129B5987C00B41DC2 /* MyTelkomselApp */;
+			targetProxy = 455031C929B5987F00B41DC2 /* PBXContainerItemProxy */;
+		};
+		455031D429B5987F00B41DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 455031B129B5987C00B41DC2 /* MyTelkomselApp */;
+			targetProxy = 455031D329B5987F00B41DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		455031BB29B5987C00B41DC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				455031BC29B5987C00B41DC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		455031C029B5987F00B41DC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				455031C129B5987F00B41DC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		455031DA29B5987F00B41DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		455031DB29B5987F00B41DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		455031DD29B5987F00B41DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTelkomselApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhan.MyTelkomselApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		455031DE29B5987F00B41DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTelkomselApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhan.MyTelkomselApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		455031E029B5987F00B41DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhan.MyTelkomselAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTelkomselApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTelkomselApp";
+			};
+			name = Debug;
+		};
+		455031E129B5987F00B41DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhan.MyTelkomselAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTelkomselApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTelkomselApp";
+			};
+			name = Release;
+		};
+		455031E329B5987F00B41DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhan.MyTelkomselAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyTelkomselApp;
+			};
+			name = Debug;
+		};
+		455031E429B5987F00B41DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhan.MyTelkomselAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyTelkomselApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		455031AD29B5987C00B41DC2 /* Build configuration list for PBXProject "MyTelkomselApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455031DA29B5987F00B41DC2 /* Debug */,
+				455031DB29B5987F00B41DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		455031DC29B5987F00B41DC2 /* Build configuration list for PBXNativeTarget "MyTelkomselApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455031DD29B5987F00B41DC2 /* Debug */,
+				455031DE29B5987F00B41DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		455031DF29B5987F00B41DC2 /* Build configuration list for PBXNativeTarget "MyTelkomselAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455031E029B5987F00B41DC2 /* Debug */,
+				455031E129B5987F00B41DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		455031E229B5987F00B41DC2 /* Build configuration list for PBXNativeTarget "MyTelkomselAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455031E329B5987F00B41DC2 /* Debug */,
+				455031E429B5987F00B41DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 455031AA29B5987C00B41DC2 /* Project object */;
+}
