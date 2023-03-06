@@ -11,6 +11,8 @@ class LanggananTableCell: UITableViewCell {
     
     static let identifier = "LanggananTableCell"
     
+    var namaPaketDatas: [PaketModel] = []
+    
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -55,13 +57,14 @@ class LanggananTableCell: UITableViewCell {
 
 extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return namaPaketDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LanggananCollectionCell.identifier, for: indexPath) as? LanggananCollectionCell else {
             return UICollectionViewCell()
         }
+        cell.config(model: namaPaketDatas[indexPath.row])
         cell.setupCell()
         return cell
     }

@@ -59,4 +59,12 @@ class LanggananCollectionCell: UICollectionViewCell {
         internetOmgLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     }
 
+    func config(model: PaketModel) {
+        gbPaketLabel.text = model.besarPaket
+        beforePriceLabel.text = "Rp.\(model.beforePrice)"
+        afterPriceLabel.text = "Rp. \(model.afterPrice)"
+        internetOmgLabel.text = model.namaPaket
+        
+        
+    }
 }
