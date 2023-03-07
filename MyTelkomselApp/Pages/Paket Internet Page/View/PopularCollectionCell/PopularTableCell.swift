@@ -17,7 +17,7 @@ class PopularTableCell: UITableViewCell {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(UINib(nibName: "PopularCollectionCell", bundle: nil), forCellWithReuseIdentifier: PopularCollectionCell.identifier)
+        collectionView.register(UINib(nibName: "LanggananCollectionCell", bundle: nil), forCellWithReuseIdentifier: LanggananCollectionCell.identifier)
         collectionView.layer.masksToBounds = false
 //        collectionView.backgroundColor = .green
 
@@ -64,6 +64,8 @@ extension PopularTableCell: UICollectionViewDataSource, UICollectionViewDelegate
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LanggananCollectionCell.identifier, for: indexPath) as? LanggananCollectionCell else {
             return UICollectionViewCell()
         }
+        cell.config(model: popularDatas[indexPath.row])
+        cell.setupCell()
         return cell
     }
     

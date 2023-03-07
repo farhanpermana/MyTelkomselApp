@@ -48,6 +48,10 @@ class PaketInternetController: UIViewController {
         
         paketInternetTable.register(UINib(nibName: "PopularTitleCell", bundle: nil), forCellReuseIdentifier: PopularTitleCell.identifier)
         
+        paketInternetTable.register(PopularTableCell.self, forCellReuseIdentifier: PopularTableCell.identifier)
+        
+        paketInternetTable.register(UINib(nibName: "VoucherTitleCell", bundle: nil), forCellReuseIdentifier: VoucherTitleCell.identifier)
+        
         paketInternetTable.separatorStyle = .none
         paketInternetTable.delegate = self
         paketInternetTable.dataSource = self
@@ -71,6 +75,12 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
         case 3:
             return 190
         case 4:
+            return 40
+        case 5:
+            return 190
+        case 6:
+            return 40
+        case 7:
             return 40
         default:
             return 0
@@ -114,8 +124,20 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
             }
             
             return cell
-//        case .listPopular:
-//        case .titleVoucher:
+        case .listPopular:
+            guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: PopularTableCell.identifier) as? PopularTableCell else {
+                return UITableViewCell()
+            }
+            cell.popularDatas = paketInternetDatas
+            cell.setupTable()
+            return cell
+        case .titleVoucher:
+            guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: VoucherTitleCell.identifier) as?
+                    VoucherTitleCell else {
+                return UITableViewCell()
+            }
+            
+            return cell
 //        case .listVoucher:
 //        case .titleBelajar:
 //        case .listBelajar:
@@ -125,7 +147,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        5
+        7
     }
     
     
