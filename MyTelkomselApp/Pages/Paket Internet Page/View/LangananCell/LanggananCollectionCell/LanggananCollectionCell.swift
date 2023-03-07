@@ -7,9 +7,15 @@
 
 import UIKit
 
+//protocol PaketCollectionDelegate {
+//    func moveToBeliPaketPage()
+//}
+
 class LanggananCollectionCell: UICollectionViewCell {
     
     static let identifier = "LanggananCollectionCell"
+    
+//    var delegate: PaketCollectionDelegate?
 
     @IBOutlet weak var gbPaketLabel: UILabel!
     
@@ -50,9 +56,6 @@ class LanggananCollectionCell: UICollectionViewCell {
         gbPaketLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         
         beforePriceLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)
-        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: "Rp.99.000")
-            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
-        beforePriceLabel.attributedText = attributeString
         
         afterPriceLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         
@@ -61,10 +64,22 @@ class LanggananCollectionCell: UICollectionViewCell {
 
     func config(model: PaketModel) {
         gbPaketLabel.text = model.besarPaket
-        beforePriceLabel.text = "Rp.\(model.beforePrice)"
+        // strikethrough label
+        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: "Rp.\(model.beforePrice)")
+            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
+        beforePriceLabel.attributedText = attributeString
+
         afterPriceLabel.text = "Rp. \(model.afterPrice)"
         internetOmgLabel.text = model.namaPaket
         
         
     }
+    
+//    @IBAction func tapBuyPaket(_ sender: Any) {
+//        print("button clicked")
+//        delegate?.moveToBeliPaketPage()
+//    }
+    
+
+    
 }

@@ -1,25 +1,26 @@
 //
-//  LanggananTableCell.swift
+//  VoucherTableCell.swift
 //  MyTelkomselApp
 //
-//  Created by Phinconers on 06/03/23.
+//  Created by Phinconers on 07/03/23.
 //
 
 import UIKit
 
-class LanggananTableCell: UITableViewCell {
+class VoucherTableCell: UITableViewCell {
     
-    static let identifier = "LanggananTableCell"
-    
-    var namaPaketDatas: [PaketModel] = []
-    
-    var moveToBeliPaketDelegate: moveToBeliPaketPageDelegate?
+    static let identifier = "VoucherTableCell"
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
     
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(UINib(nibName: "LanggananCollectionCell", bundle: nil), forCellWithReuseIdentifier: LanggananCollectionCell.identifier)
+        collectionView.register(UINib(nibName: "VoucherCollectionCell", bundle: nil), forCellWithReuseIdentifier: VoucherCollectionCell.identifier)
         collectionView.layer.masksToBounds = false
 //        collectionView.backgroundColor = .green
 
@@ -35,7 +36,7 @@ class LanggananTableCell: UITableViewCell {
             collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
     }
-    
+
     func setupTable() {
         contentView.addSubview(collectionView)
         setupCollectionView()
@@ -43,12 +44,7 @@ class LanggananTableCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -57,30 +53,26 @@ class LanggananTableCell: UITableViewCell {
 
 }
 
-extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension VoucherTableCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return namaPaketDatas.count
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LanggananCollectionCell.identifier, for: indexPath) as? LanggananCollectionCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VoucherCollectionCell.identifier, for: indexPath) as? VoucherCollectionCell else {
             return UICollectionViewCell()
         }
-        cell.config(model: namaPaketDatas[indexPath.row])
-        cell.setupCell()
+        
         return cell
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 5, left: 16, bottom: 0, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 1.5, height: 130)
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.moveToBeliPaketDelegate?.moveToBeliPaketPage(model: namaPaketDatas[indexPath.row])
-    
+        return CGSize(width: collectionView.frame.width / 1.5, height: 100)
     }
     
 }
+
+

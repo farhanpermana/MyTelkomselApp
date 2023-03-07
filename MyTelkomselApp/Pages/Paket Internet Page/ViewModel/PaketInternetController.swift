@@ -26,15 +26,20 @@ enum PaketInternetSections: Int {
     case listBelajar = 9
 }
 
-class PaketInternetController: UIViewController {
-    
+class PaketInternetController: UIViewController, moveToBeliPaketPageDelegate {
+
     @IBOutlet weak var paketInternetTable: UITableView!
     
     var paketInternetDatas: [PaketModel] = []
     
+    var delegate: moveToBeliPaketPageDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTable()
+        
+        // delegate = self for pagetrans
+        delegate = self
     }
     
     func setupTable() {
@@ -52,10 +57,26 @@ class PaketInternetController: UIViewController {
         
         paketInternetTable.register(UINib(nibName: "VoucherTitleCell", bundle: nil), forCellReuseIdentifier: VoucherTitleCell.identifier)
         
+        paketInternetTable.register(VoucherTableCell.self, forCellReuseIdentifier: VoucherTableCell.identifier)
+        
+        paketInternetTable.register(UINib(nibName: "BelajarTitleCell", bundle: nil), forCellReuseIdentifier: BelajarTitleCell.identifier)
+        
+        paketInternetTable.register(BelajarTableCell.self, forCellReuseIdentifier: BelajarTableCell.identifier)
+        
+        
+        
         paketInternetTable.separatorStyle = .none
         paketInternetTable.delegate = self
         paketInternetTable.dataSource = self
         paketModel()
+    }
+    
+    // page trans func
+    func moveToBeliPaketPage(model: PaketModel) {
+        let vc = BeliPaketController()
+        vc.beliPaket = model
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
 
@@ -81,7 +102,11 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
         case 6:
             return 40
         case 7:
+            return 190
+        case 8:
             return 40
+        case 9:
+            return 190
         default:
             return 0
         }
@@ -116,6 +141,9 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.namaPaketDatas = paketInternetDatas
+            
+            // calling page trans
+            cell.moveToBeliPaketDelegate = self.delegate as? any moveToBeliPaketPageDelegate
             cell.setupTable()
             return cell
         case .titlePopular:
@@ -138,16 +166,45 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
             }
             
             return cell
-//        case .listVoucher:
-//        case .titleBelajar:
-//        case .listBelajar:
+        case .listVoucher:
+            guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: VoucherTableCell.identifier) as?
+                    VoucherTableCell else {
+                return UITableViewCell()
+            }
+            cell.setupTable()
+            return cell
+
+        case .titleBelajar:
+            guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: BelajarTitleCell.identifier) as?
+                    BelajarTitleCell else {
+                return UITableViewCell()
+            }
+            
+            return cell
+
+        case .listBelajar:
+            guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: BelajarTableCell.identifier) as?
+                    BelajarTableCell else {
+                return UITableViewCell()
+            }
+            cell.belajarDatas = paketInternetDatas
+            cell.setupTable()
+            return cell
         
         default:
             return UITableViewCell()
         }
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        7
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // section 3
+        if indexPath.section == 3 {
+            moveToBeliPaketPage(model: paketInternetDatas[indexPath.row])
+        }
     }
     
     
@@ -156,7 +213,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
 
 extension PaketInternetController: PaketProtocol {
     func carouselModel() {
-    
+        
     }
     
     func voucherModel() {

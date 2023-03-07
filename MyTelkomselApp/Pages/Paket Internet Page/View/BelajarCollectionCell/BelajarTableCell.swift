@@ -1,19 +1,17 @@
 //
-//  LanggananTableCell.swift
+//  BelajarTableCell.swift
 //  MyTelkomselApp
 //
-//  Created by Phinconers on 06/03/23.
+//  Created by Phinconers on 07/03/23.
 //
 
 import UIKit
 
-class LanggananTableCell: UITableViewCell {
+class BelajarTableCell: UITableViewCell {
     
-    static let identifier = "LanggananTableCell"
+     static let identifier = "BelajarTableCell"
     
-    var namaPaketDatas: [PaketModel] = []
-    
-    var moveToBeliPaketDelegate: moveToBeliPaketPageDelegate?
+    var belajarDatas: [PaketModel] = []
     
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -57,16 +55,16 @@ class LanggananTableCell: UITableViewCell {
 
 }
 
-extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension BelajarTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return namaPaketDatas.count
+        return belajarDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LanggananCollectionCell.identifier, for: indexPath) as? LanggananCollectionCell else {
             return UICollectionViewCell()
         }
-        cell.config(model: namaPaketDatas[indexPath.row])
+        cell.config(model: belajarDatas[indexPath.row])
         cell.setupCell()
         return cell
     }
@@ -78,9 +76,15 @@ extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width / 1.5, height: 130)
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.moveToBeliPaketDelegate?.moveToBeliPaketPage(model: namaPaketDatas[indexPath.row])
     
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 10
+//    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print("Selected")
+//    }
     
 }
+
+
