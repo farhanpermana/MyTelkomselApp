@@ -11,6 +11,8 @@ class CarouselTableCell: UITableViewCell {
     
     static let identifier = "CarouselTableCell"
     
+    var carouselDatas: [CarouselModel] = []
+    
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -36,6 +38,7 @@ class CarouselTableCell: UITableViewCell {
         contentView.addSubview(collectionView)
         setupCollectionView()
         collectionView.backgroundColor = UIColor.clear
+        collectionView.reloadData()
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -55,14 +58,14 @@ class CarouselTableCell: UITableViewCell {
 
 extension CarouselTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return carouselDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionCell.identifier, for: indexPath) as? CarouselCollectionCell else {
             return UICollectionViewCell()
         }
-        
+        cell.config(model: carouselDatas[indexPath.row])
         cell.setupCell()
         return cell
     }

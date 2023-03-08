@@ -64,7 +64,8 @@ extension PopularTableCell: UICollectionViewDataSource, UICollectionViewDelegate
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LanggananCollectionCell.identifier, for: indexPath) as? LanggananCollectionCell else {
             return UICollectionViewCell()
         }
-        cell.config(model: popularDatas[indexPath.row])
+        let shouldHideBookmark = collectionView.tag == 0
+        cell.config(model: popularDatas[indexPath.row], hideBookmark: shouldHideBookmark)
         cell.setupCell()
         return cell
     }

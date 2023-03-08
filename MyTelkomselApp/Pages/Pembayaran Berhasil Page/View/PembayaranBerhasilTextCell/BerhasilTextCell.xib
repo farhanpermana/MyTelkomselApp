@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="400" id="KGk-i7-Jjw" customClass="BerhasilTextCell" customModule="MyTelkomselApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oha-4o-R7h">
+                        <rect key="frame" x="80" y="52" width="160" height="160"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VW2-jI-56T">
+                                <rect key="frame" x="43.999999999999993" y="43.999999999999993" width="72.333333333333314" height="72.333333333333314"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gPL-wQ-qsF">
+                                        <rect key="frame" x="8.0000000000000036" y="10.333333333333332" width="56.333333333333343" height="52.333333333333343"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstItem="gPL-wQ-qsF" firstAttribute="leading" secondItem="VW2-jI-56T" secondAttribute="leading" constant="8" id="1np-vu-Ylv"/>
+                                    <constraint firstAttribute="width" constant="72.329999999999998" id="HJv-nY-U8P"/>
+                                    <constraint firstAttribute="trailing" secondItem="gPL-wQ-qsF" secondAttribute="trailing" constant="8" id="Mpd-JD-U3n"/>
+                                    <constraint firstAttribute="height" constant="72.329999999999998" id="Q7F-TY-UT6"/>
+                                    <constraint firstItem="gPL-wQ-qsF" firstAttribute="top" secondItem="VW2-jI-56T" secondAttribute="top" constant="8" id="dYD-ve-PUs"/>
+                                    <constraint firstAttribute="bottom" secondItem="gPL-wQ-qsF" secondAttribute="bottom" constant="8" id="sFi-ij-e3k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="VW2-jI-56T" firstAttribute="leading" secondItem="Oha-4o-R7h" secondAttribute="leading" constant="44" id="GEU-Ed-MSv"/>
+                            <constraint firstAttribute="height" constant="160" id="n83-kW-U8J"/>
+                            <constraint firstItem="VW2-jI-56T" firstAttribute="top" secondItem="Oha-4o-R7h" secondAttribute="top" constant="44" id="oYY-oI-Zdc"/>
+                            <constraint firstAttribute="width" constant="160" id="vwN-oa-1et"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pembayaran Berhasil!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zW1-w9-uvT">
+                        <rect key="frame" x="78" y="262" width="165" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pembayaran paket internet telah berhasil. Kami akan memberitahu kamu jika paket sudah diaktifkan." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqJ-9f-U9r">
+                        <rect key="frame" x="33" y="299" width="254" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QqJ-9f-U9r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="2l5-er-8du"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QqJ-9f-U9r" secondAttribute="trailing" constant="17" id="AXW-f1-hIZ"/>
+                    <constraint firstItem="Oha-4o-R7h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="ZLw-aT-iLK"/>
+                    <constraint firstItem="zW1-w9-uvT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="62" id="gsg-ie-7CL"/>
+                    <constraint firstItem="zW1-w9-uvT" firstAttribute="top" secondItem="Oha-4o-R7h" secondAttribute="bottom" constant="50" id="if0-St-f1C"/>
+                    <constraint firstItem="Oha-4o-R7h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="52" id="lPv-Ub-ZDs"/>
+                    <constraint firstItem="QqJ-9f-U9r" firstAttribute="top" secondItem="zW1-w9-uvT" secondAttribute="bottom" constant="16" id="oAg-D7-1tt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkMarkImg" destination="gPL-wQ-qsF" id="AT7-OL-tx3"/>
+                <outlet property="firstView" destination="VW2-jI-56T" id="gp7-HL-kGI"/>
+                <outlet property="secondView" destination="Oha-4o-R7h" id="paF-Tf-3L2"/>
+                <outlet property="subTitleBerhasilLabel" destination="QqJ-9f-U9r" id="bQ1-6Y-NVb"/>
+                <outlet property="titleBerhasilLabel" destination="zW1-w9-uvT" id="xBi-3N-20R"/>
+            </connections>
+            <point key="canvasLocation" x="7.6335877862595414" y="144.36619718309859"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

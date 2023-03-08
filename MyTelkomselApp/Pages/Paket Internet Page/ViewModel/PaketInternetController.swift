@@ -32,6 +32,8 @@ class PaketInternetController: UIViewController, moveToBeliPaketPageDelegate {
     
     var paketInternetDatas: [PaketModel] = []
     
+    var datasCarousel: [CarouselModel] = []
+    
     var delegate: moveToBeliPaketPageDelegate?
     
     override func viewDidLoad() {
@@ -92,21 +94,21 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 110
         case 2:
-            return 40
+            return 35
         case 3:
-            return 190
+            return 150
         case 4:
-            return 40
+            return 35
         case 5:
-            return 190
+            return 150
         case 6:
             return 40
         case 7:
-            return 190
+            return 150
         case 8:
-            return 40
+            return 35
         case 9:
-            return 190
+            return 150
         default:
             return 0
         }
@@ -126,7 +128,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
                     CarouselTableCell else {
                 return UITableViewCell()
             }
-            
+            cell.carouselDatas = datasCarousel
             cell.setupTable()
             return cell
         case .titleLangganan:
@@ -143,7 +145,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
             cell.namaPaketDatas = paketInternetDatas
             
             // calling page trans
-            cell.moveToBeliPaketDelegate = self.delegate as? any moveToBeliPaketPageDelegate
+            cell.moveToBeliPaketDelegate = self.delegate
             cell.setupTable()
             return cell
         case .titlePopular:
@@ -156,6 +158,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: PopularTableCell.identifier) as? PopularTableCell else {
                 return UITableViewCell()
             }
+           
             cell.popularDatas = paketInternetDatas
             cell.setupTable()
             return cell
@@ -171,6 +174,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
                     VoucherTableCell else {
                 return UITableViewCell()
             }
+            
             cell.setupTable()
             return cell
 
@@ -213,10 +217,15 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
 
 extension PaketInternetController: PaketProtocol {
     func carouselModel() {
-        
+        let carousel1 = CarouselModel(imageLabel: "carousel1", titleLabel: "Internet OMG!", subTitleLabel: "Bisa YouTube dan Sosmed")
+        let carousel2 = CarouselModel(imageLabel: "carousel1", titleLabel: "Internet OMG!", subTitleLabel: "Bisa YouTube dan Sosmed")
+        datasCarousel.append(carousel1)
+        datasCarousel.append(carousel2)
     }
     
     func voucherModel() {
+        
+//        let data1 = VoucherModels(bannerLabel: "banner1", titleLabel: "Internet OMG!", gradientView: "gradient1")
         
     }
     

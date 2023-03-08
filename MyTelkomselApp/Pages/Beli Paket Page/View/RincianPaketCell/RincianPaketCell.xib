@@ -28,51 +28,44 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OMG!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-KW-2ti">
-                        <rect key="frame" x="16" y="87" width="45" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-VC-ZdJ">
+                        <rect key="frame" x="243" y="114" width="61" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-VC-ZdJ">
-                        <rect key="frame" x="243" y="116" width="61" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.5 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZT-iz-ef6">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZT-iz-ef6">
                         <rect key="frame" x="252" y="58" width="52" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voice Tsel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T63-rl-yHD">
-                        <rect key="frame" x="16" y="145" width="77" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sny-6t-8Pm">
+                        <rect key="frame" x="266" y="86" width="38" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sny-6t-8Pm">
-                        <rect key="frame" x="266" y="87" width="38" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLq-p2-Rrh">
+                        <rect key="frame" x="235" y="142" width="69" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SMS Tsel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s56-uE-PqQ">
-                        <rect key="frame" x="16" y="116" width="71" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMG!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s56-uE-PqQ">
+                        <rect key="frame" x="16" y="86" width="45" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100 Mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLq-p2-Rrh">
-                        <rect key="frame" x="235" y="145" width="69" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Tsel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-nW-2kb">
+                        <rect key="frame" x="16" y="114" width="71" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voice Tsel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T63-rl-yHD">
+                        <rect key="frame" x="16" y="142" width="77" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -81,11 +74,36 @@
                 <constraints>
                     <constraint firstItem="RNU-eA-UUV" firstAttribute="top" secondItem="zPi-gG-8do" secondAttribute="bottom" constant="22" id="27s-rg-xGH"/>
                     <constraint firstItem="zPi-gG-8do" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EPi-eE-kaG"/>
+                    <constraint firstItem="rLq-p2-Rrh" firstAttribute="top" secondItem="Pby-VC-ZdJ" secondAttribute="bottom" constant="7" id="PIA-c2-sQQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Pby-VC-ZdJ" secondAttribute="trailing" constant="16" id="PVP-Kk-Ra5"/>
+                    <constraint firstItem="P6A-nW-2kb" firstAttribute="top" secondItem="s56-uE-PqQ" secondAttribute="bottom" constant="7" id="Qca-1D-J4R"/>
+                    <constraint firstAttribute="trailing" secondItem="Sny-6t-8Pm" secondAttribute="trailing" constant="16" id="Sht-y6-hZo"/>
+                    <constraint firstItem="T63-rl-yHD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Som-Df-azd"/>
+                    <constraint firstAttribute="trailing" secondItem="EZT-iz-ef6" secondAttribute="trailing" constant="16" id="U6D-ll-VP0"/>
                     <constraint firstItem="zPi-gG-8do" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XrP-9Q-bJv"/>
                     <constraint firstItem="RNU-eA-UUV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Yga-WH-yFA"/>
+                    <constraint firstItem="EZT-iz-ef6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="58" id="acU-37-34k"/>
+                    <constraint firstItem="s56-uE-PqQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cfS-Mc-b5V"/>
+                    <constraint firstAttribute="trailing" secondItem="rLq-p2-Rrh" secondAttribute="trailing" constant="16" id="jfR-6L-rrF"/>
+                    <constraint firstItem="Pby-VC-ZdJ" firstAttribute="top" secondItem="Sny-6t-8Pm" secondAttribute="bottom" constant="7" id="kcd-dc-tb8"/>
+                    <constraint firstItem="Sny-6t-8Pm" firstAttribute="top" secondItem="EZT-iz-ef6" secondAttribute="bottom" constant="7" id="mBp-W6-njd"/>
+                    <constraint firstItem="s56-uE-PqQ" firstAttribute="top" secondItem="RNU-eA-UUV" secondAttribute="bottom" constant="7" id="nVd-5a-AXH"/>
+                    <constraint firstItem="P6A-nW-2kb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="o9j-os-HWB"/>
+                    <constraint firstItem="T63-rl-yHD" firstAttribute="top" secondItem="P6A-nW-2kb" secondAttribute="bottom" constant="7" id="wvQ-sW-2pP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="internetLabel" destination="RNU-eA-UUV" id="72z-bo-HNB"/>
+                <outlet property="internetValueLabel" destination="EZT-iz-ef6" id="RQ4-ld-LY1"/>
+                <outlet property="omgLabel" destination="s56-uE-PqQ" id="3hL-Ke-z6S"/>
+                <outlet property="omgValueLabel" destination="Sny-6t-8Pm" id="oDI-qk-GOG"/>
+                <outlet property="smsTselLabel" destination="P6A-nW-2kb" id="5xd-r6-3N3"/>
+                <outlet property="smsTselValueLabel" destination="Pby-VC-ZdJ" id="ic0-uF-4sU"/>
+                <outlet property="titleLabel" destination="zPi-gG-8do" id="S30-fu-viX"/>
+                <outlet property="voiceTselLabel" destination="T63-rl-yHD" id="biC-kC-UBP"/>
+                <outlet property="voiceTselValueLabel" destination="rLq-p2-Rrh" id="z9f-rr-YLq"/>
+            </connections>
             <point key="canvasLocation" x="74.809160305343511" y="74.295774647887328"/>
         </tableViewCell>
     </objects>

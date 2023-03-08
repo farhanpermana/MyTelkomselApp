@@ -19,15 +19,21 @@ protocol moveToBeliPaketPageDelegate {
     func moveToBeliPaketPage(model: PaketModel)
 }
 
-class BeliPaketController: UIViewController {
+class BeliPaketController: UIViewController, moveToPembayaranBerhasilPageDelegate {
     
     @IBOutlet weak var beliPaketTableView: UITableView!
     
     var beliPaket: PaketModel?
     
+    var paketDatas: [PaketModel] = []
+    
+    var delegate: moveToPembayaranBerhasilPageDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTable()
+        
+        delegate = self
     }
     
     func setupTable() {
@@ -36,10 +42,23 @@ class BeliPaketController: UIViewController {
         
         beliPaketTableView.register(UINib(nibName: "MasaAktifPaketCell", bundle: nil), forCellReuseIdentifier: MasaAktifPaketCell.identifier)
         
+        beliPaketTableView.register(UINib(nibName: "RincianPaketCell", bundle: nil), forCellReuseIdentifier: RincianPaketCell.identifier)
+        
+        beliPaketTableView.register(UINib(nibName: "DescPaketCell", bundle: nil), forCellReuseIdentifier: DescPaketCell.identifier)
+        
+        beliPaketTableView.register(UINib(nibName: "BeliSekarangCell", bundle: nil), forCellReuseIdentifier: BeliSekarangCell.identifier)
+        
 //        beliPaketTableView.separatorStyle = 
         beliPaketTableView.delegate = self
         beliPaketTableView.dataSource = self
         
+    }
+    
+    func moveToPembayaranBerhasilPage() {
+        let vc = PembayaranBerhasilController()
+        vc.datasPaket = self.paketDatas
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
@@ -57,7 +76,7 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 50
         case 2:
-            return 50
+            return 150
         case 3:
             return 190
         case 4:
@@ -82,18 +101,27 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
             }
 //            cell.masaAktifPaketLabel.text = beliPaket?.masaAktifPaket
             return cell
-//        case .rincianPaket:
-//            guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: "BeliPaketRincianCell", for: indexPath) as! BeliPaketRincianCell
+        case .rincianPaket:
+            guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: RincianPaketCell.identifier, for: indexPath) as? RincianPaketCell
+            else {
+                return UITableViewCell()
+            }
 //            cell.rincianPaketLabel.text = beliPaket?.rincianPaket
-//            return cell
-//        case .descPaket:
-//            guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: "BeliPaketDescCell", for: indexPath) as! BeliPaketDescCell
+            return cell
+        case .descPaket:
+            guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: DescPaketCell.identifier, for: indexPath) as? DescPaketCell
+            else {return UITableViewCell()}
 //            cell.descPaketLabel.text = beliPaket?.descPaket
-//            return cell
-//        case .beliButton:
-//            guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: "BeliPaketButtonCell", for: indexPath) as! BeliPaketButtonCell
-//            cell.delegate = self
-//            return cell
+            return cell
+        case .beliButton:
+            guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: BeliSekarangCell.identifier, for: indexPath) as? BeliSekarangCell
+            else {
+                return UITableViewCell()
+            }
+            
+            cell.delegate = self.delegate
+
+            return cell
         default:
             return UITableViewCell()
         }

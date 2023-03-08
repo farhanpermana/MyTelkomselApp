@@ -39,9 +39,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="251" image="bookmark" translatesAutoresizingMaskIntoConstraints="NO" id="x0c-gR-tma">
-                                <rect key="frame" x="242" y="15" width="24" height="18"/>
+                                <rect key="frame" x="248" y="15" width="18" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="NDo-mH-rhK"/>
+                                    <constraint firstAttribute="width" constant="18" id="7EE-4V-58Q"/>
+                                    <constraint firstAttribute="height" constant="40" id="NDo-mH-rhK"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ8-BV-wSg">
@@ -87,7 +88,6 @@
                             <constraint firstAttribute="trailing" secondItem="x0c-gR-tma" secondAttribute="trailing" constant="12" id="ZL2-oz-fbG"/>
                             <constraint firstItem="Ez3-EL-O1G" firstAttribute="leading" secondItem="Ve0-93-AiA" secondAttribute="leading" constant="12" id="dtM-Y7-bOc"/>
                             <constraint firstItem="nkm-jH-391" firstAttribute="leading" secondItem="Ve0-93-AiA" secondAttribute="leading" constant="12" id="e64-ql-n0u"/>
-                            <constraint firstItem="x0c-gR-tma" firstAttribute="leading" secondItem="mZ8-BV-wSg" secondAttribute="trailing" constant="61" id="laX-yE-EXB"/>
                             <constraint firstItem="mZ8-BV-wSg" firstAttribute="top" secondItem="Ve0-93-AiA" secondAttribute="top" constant="15" id="mr4-FL-6e9"/>
                             <constraint firstItem="x0c-gR-tma" firstAttribute="top" secondItem="Ve0-93-AiA" secondAttribute="top" constant="15" id="nyZ-Cb-FeJ"/>
                             <constraint firstItem="k4d-pI-IkL" firstAttribute="top" secondItem="Ez3-EL-O1G" secondAttribute="bottom" constant="44" id="oOe-Wk-OOa"/>
@@ -109,7 +109,7 @@
                 <outlet property="afterPriceLabel" destination="nkm-jH-391" id="HvZ-wp-s01"/>
                 <outlet property="beforePriceLabel" destination="k4d-pI-IkL" id="kN3-gc-nSs"/>
                 <outlet property="bgView" destination="Ve0-93-AiA" id="991-2y-RV8"/>
-                <outlet property="bookmarkIcon" destination="x0c-gR-tma" id="c7m-h4-5h2"/>
+                <outlet property="bookmarkIcon" destination="x0c-gR-tma" id="hDo-dW-ind"/>
                 <outlet property="durasiLabel" destination="rVc-yq-8V6" id="TZZ-pc-DM3"/>
                 <outlet property="durasiView" destination="mZ8-BV-wSg" id="QIh-rM-sRU"/>
                 <outlet property="gbPaketLabel" destination="Ez3-EL-O1G" id="ZcC-fU-Kd7"/>

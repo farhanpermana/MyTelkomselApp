@@ -1,25 +1,21 @@
 //
-//  LanggananTableCell.swift
+//  PaketDibeliCell.swift
 //  MyTelkomselApp
 //
-//  Created by Phinconers on 06/03/23.
+//  Created by Phinconers on 08/03/23.
 //
 
 import UIKit
 
-class LanggananTableCell: UITableViewCell {
+class PaketDibeliCell: UITableViewCell {
     
-    static let identifier = "LanggananTableCell"
-    
-    var namaPaketDatas: [PaketModel] = []
-    
-    var moveToBeliPaketDelegate: moveToBeliPaketPageDelegate?
+    static let identifier = "PaketDibeliCell"
     
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(UINib(nibName: "LanggananCollectionCell", bundle: nil), forCellWithReuseIdentifier: LanggananCollectionCell.identifier)
+        collectionView.register(UINib(nibName: "PaketDibeliCollectionCell", bundle: nil), forCellWithReuseIdentifier: PaketDibeliCollectionCell.identifier)
         collectionView.layer.masksToBounds = false
 //        collectionView.backgroundColor = .green
 
@@ -43,32 +39,31 @@ class LanggananTableCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-
+    
 }
 
-extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PaketDibeliCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return namaPaketDatas.count
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LanggananCollectionCell.identifier, for: indexPath) as? LanggananCollectionCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PaketDibeliCollectionCell.identifier, for: indexPath) as? PaketDibeliCollectionCell else {
             return UICollectionViewCell()
         }
-        let shouldHideBookmark = collectionView.tag == 1
-        cell.config(model: namaPaketDatas[indexPath.row], hideBookmark: shouldHideBookmark)
-        cell.setupCell()
+        
         return cell
     }
     
@@ -78,10 +73,6 @@ extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width / 1.5, height: 130)
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.moveToBeliPaketDelegate?.moveToBeliPaketPage(model: namaPaketDatas[indexPath.row])
-    
     }
     
 }

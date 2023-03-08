@@ -36,6 +36,8 @@ class LanggananCollectionCell: UICollectionViewCell {
     @IBOutlet weak var durasiView: UIView!
     
     
+    var isPopularCollection: Bool = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -49,7 +51,7 @@ class LanggananCollectionCell: UICollectionViewCell {
         
         
         durasiView.layer.backgroundColor = UIColor.lightGray.cgColor
-        durasiView.layer.cornerRadius = 16
+        durasiView.layer.cornerRadius = durasiView.frame.width / 8
         
         durasiLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         
@@ -58,12 +60,15 @@ class LanggananCollectionCell: UICollectionViewCell {
         beforePriceLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)
         
         afterPriceLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        afterPriceLabel.textColor = UIColor.red
         
         internetOmgLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     }
 
-    func config(model: PaketModel) {
+    func config(model: PaketModel, hideBookmark: Bool) {
+        bookmarkIcon.isHidden = hideBookmark
         gbPaketLabel.text = model.besarPaket
+        
         // strikethrough label
         let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: "Rp.\(model.beforePrice)")
             attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
