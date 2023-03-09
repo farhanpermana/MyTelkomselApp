@@ -31,6 +31,10 @@ class MasaAktifPaketCell: UITableViewCell {
         
         durasiPaketLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
     }
+    
+    func config(model: PaketModel) {
+        durasiPaketLabel.text = model.durasiPaket
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

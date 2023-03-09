@@ -11,7 +11,7 @@ class RincianPaketCell: UITableViewCell {
     
     static let identifier = "RincianPaketCell"
     
-    var datasRincian: [RincianPaketModel] = []
+//    var datasRincian: [RincianPaketModel] = []
     
     @IBOutlet weak var titleLabel: UILabel!
     

@@ -37,6 +37,7 @@ class PopularTableCell: UITableViewCell {
     func setupTable() {
         contentView.addSubview(collectionView)
         setupCollectionView()
+        collectionView.reloadData()
         collectionView.backgroundColor = UIColor.clear
         collectionView.delegate = self
         collectionView.dataSource = self

@@ -78,10 +78,13 @@ class LanggananCollectionCell: UICollectionViewCell {
             attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
         beforePriceLabel.attributedText = attributeString
 
-//        afterPriceLabel.text = "Rp. \(model.afterPrice)"
+        
         if model.afterPrice == "" {
             beforePriceLabel.isHidden = true
             afterPriceLabel.text = "Free"
+        }
+        else {
+            afterPriceLabel.text = "Rp.\(model.afterPrice)"
         }
         
         internetOmgLabel.text = model.namaPaket

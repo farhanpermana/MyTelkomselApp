@@ -244,7 +244,7 @@ extension PaketInternetController: PaketProtocol {
             RincianPaketModel(internetLabel: "1.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data2 = MyTelkomselApp.PaketModel(besarPaket: "20 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "7 Hari", rincianPaket: [
+        let data2 = MyTelkomselApp.PaketModel(besarPaket: "20 GB", beforePrice: "98.000", afterPrice: "90.000", namaPaket: "Internet OMG!", durasiPaket: "7 Hari", rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         

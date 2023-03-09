@@ -48,7 +48,7 @@ class BeliPaketController: UIViewController, moveToPembayaranBerhasilPageDelegat
         
         beliPaketTableView.register(UINib(nibName: "BeliSekarangCell", bundle: nil), forCellReuseIdentifier: BeliSekarangCell.identifier)
         
-//        beliPaketTableView.separatorStyle = 
+        beliPaketTableView.separatorInset = UIEdgeInsets(top: 0, left: 1, bottom: 0, right: 1)
         beliPaketTableView.delegate = self
         beliPaketTableView.dataSource = self
         
@@ -101,14 +101,14 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
         case .paketPrice:
             guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: PaketPriceTableCell.identifier, for: indexPath) as? PaketPriceTableCell else { return UITableViewCell()
             }
-            
+            cell.config(model: beliPaket!)
             return cell
         case .masaAktifPaket:
             guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: MasaAktifPaketCell.identifier, for: indexPath) as? MasaAktifPaketCell
             else { return UITableViewCell()
                 
             }
-//            cell.masaAktifPaketLabel.text = beliPaket?.masaAktifPaket
+            cell.config(model: beliPaket!)
             return cell
         case .rincianPaket:
             guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: RincianPaketCell.identifier, for: indexPath) as? RincianPaketCell
@@ -122,6 +122,8 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: DescPaketCell.identifier, for: indexPath) as? DescPaketCell
             else {return UITableViewCell()}
 //            cell.descPaketLabel.text = beliPaket?.descPaket
+            cell.config(model: beliPaket!.rincianPaket[indexPath.row])
+            
             return cell
         case .beliButton:
             guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: BeliSekarangCell.identifier, for: indexPath) as? BeliSekarangCell
