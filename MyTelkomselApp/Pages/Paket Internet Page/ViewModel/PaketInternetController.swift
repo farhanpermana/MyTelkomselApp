@@ -96,7 +96,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return paketInternetTable.rowHeight
+            return 30
         case 1:
             return 110
         case 2:
@@ -116,7 +116,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
         case 9:
             return 150
         default:
-            return 0
+            return paketInternetTable.rowHeight
         }
     }
     

@@ -34,6 +34,7 @@ class MasaAktifPaketCell: UITableViewCell {
     
     func config(model: PaketModel) {
         durasiPaketLabel.text = model.durasiPaket
+        durasiPaketLabel.textColor = UIColor.red
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

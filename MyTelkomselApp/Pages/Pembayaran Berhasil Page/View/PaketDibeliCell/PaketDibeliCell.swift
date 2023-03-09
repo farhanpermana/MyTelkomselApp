@@ -72,7 +72,7 @@ extension PaketDibeliCell: UICollectionViewDataSource, UICollectionViewDelegateF
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 1.5, height: 130)
+        return CGSize(width: collectionView.frame.width / 2, height: 130)
     }
     
 }

@@ -23,8 +23,16 @@ class VoucherCollectionCell: UICollectionViewCell {
     func setupCell() {
         self.layer.cornerRadius = 4
 //        self.layer.backgroundColor = UIColor.blue.cgColor
-        self.layer.borderWidth = 1.0
+        self.layer.borderWidth = 0
         self.layer.masksToBounds = true
+        bgView.backgroundColor = UIColor.white
+        bgView.clipsToBounds = false
+        bgView.layer.shadowColor = UIColor.black.cgColor
+        bgView.layer.shadowOpacity = 0.5
+        bgView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        bgView.layer.shadowRadius = 4
+//        bgView.layer.shadowPath = UIBezierPath(roundedRect: bgView.bounds, cornerRadius: bgView.layer.cornerRadius).cgPath
+
     }
     
     func config(model: VoucherModels) {

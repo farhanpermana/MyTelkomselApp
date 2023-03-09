@@ -27,13 +27,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwH-Xi-AyO">
-                                <rect key="frame" x="151" y="18" width="33" height="21"/>
+                                <rect key="frame" x="151" y="18" width="173" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWF-cj-2jj">
-                                <rect key="frame" x="151" y="43" width="68" height="21"/>
+                                <rect key="frame" x="151" y="43" width="173" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,12 +42,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LwH-Xi-AyO" firstAttribute="leading" secondItem="kuk-Jb-xtT" secondAttribute="trailing" constant="12" id="75M-hr-vCD"/>
+                            <constraint firstAttribute="trailing" secondItem="LwH-Xi-AyO" secondAttribute="trailing" constant="21" id="8rx-os-GU3"/>
                             <constraint firstAttribute="bottom" secondItem="kuk-Jb-xtT" secondAttribute="bottom" constant="9" id="Afq-pA-UOs"/>
                             <constraint firstItem="pWF-cj-2jj" firstAttribute="leading" secondItem="kuk-Jb-xtT" secondAttribute="trailing" constant="12" id="QpI-Gn-cSC"/>
                             <constraint firstItem="kuk-Jb-xtT" firstAttribute="top" secondItem="prK-Po-1zH" secondAttribute="top" constant="9" id="bdR-lQ-zgh"/>
                             <constraint firstItem="pWF-cj-2jj" firstAttribute="top" secondItem="LwH-Xi-AyO" secondAttribute="bottom" constant="4" id="eQB-Zl-8c3"/>
                             <constraint firstItem="LwH-Xi-AyO" firstAttribute="top" secondItem="prK-Po-1zH" secondAttribute="top" constant="18" id="eWW-pa-XlZ"/>
                             <constraint firstItem="kuk-Jb-xtT" firstAttribute="leading" secondItem="prK-Po-1zH" secondAttribute="leading" constant="12" id="hFB-eu-ntT"/>
+                            <constraint firstAttribute="trailing" secondItem="pWF-cj-2jj" secondAttribute="trailing" constant="21" id="yoA-if-igL"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -23,6 +23,7 @@ class VoucherTitleCell: UITableViewCell {
     func setupCell() {
         titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         lihatSemuaLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        lihatSemuaLabel.textColor = UIColor.red
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -95,7 +95,7 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sections = BeliPaketSections(rawValue: indexPath.section)
         
-        guard let rincianPaket = self.beliPaket else { return UITableViewCell() }
+//        guard let rincianPaket = self.beliPaket else { return UITableViewCell() }
         
         switch sections {
         case .paketPrice:

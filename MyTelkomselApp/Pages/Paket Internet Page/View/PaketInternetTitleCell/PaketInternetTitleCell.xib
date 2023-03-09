@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paket Internet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9C-XT-cwE">
-                        <rect key="frame" x="104" y="11" width="112" height="22"/>
+                        <rect key="frame" x="125" y="11" width="112" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -25,9 +25,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="W9C-XT-cwE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="7dx-jH-gxb"/>
-                    <constraint firstItem="W9C-XT-cwE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="104" id="M1h-Pg-g9a"/>
-                    <constraint firstAttribute="bottom" secondItem="W9C-XT-cwE" secondAttribute="bottom" constant="11" id="cPP-3y-HKg"/>
-                    <constraint firstAttribute="trailing" secondItem="W9C-XT-cwE" secondAttribute="trailing" constant="104" id="x1B-7T-xAJ"/>
+                    <constraint firstItem="W9C-XT-cwE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="125" id="M1h-Pg-g9a"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

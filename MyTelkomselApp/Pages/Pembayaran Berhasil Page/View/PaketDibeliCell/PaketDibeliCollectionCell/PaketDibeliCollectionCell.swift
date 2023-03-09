@@ -28,6 +28,7 @@ class PaketDibeliCollectionCell: UICollectionViewCell {
         bgView.layer.cornerRadius = 4
         bgView.layer.borderWidth = 1.0
         bgView.layer.borderColor = UIColor.lightGray.cgColor
+//        bgView.frame = CGRect(x: 1, y: 1, width: 100, height: 100)
         
         titleLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
