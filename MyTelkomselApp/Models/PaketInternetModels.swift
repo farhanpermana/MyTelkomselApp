@@ -13,5 +13,6 @@ struct PaketModel {
     let afterPrice: String
     let namaPaket: String
     let durasiPaket: String
+    let isBelajar: Bool
     let rincianPaket: [RincianPaketModel]
 }

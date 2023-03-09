@@ -35,6 +35,8 @@ class BelajarTableCell: UITableViewCell {
     }
     
     func setupTable() {
+        self.belajarDatas = belajarDatas.filter { $0.isBelajar }
+        
         contentView.addSubview(collectionView)
         setupCollectionView()
         collectionView.backgroundColor = UIColor.clear

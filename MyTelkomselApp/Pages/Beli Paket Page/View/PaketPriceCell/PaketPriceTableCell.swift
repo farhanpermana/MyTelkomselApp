@@ -35,6 +35,7 @@ class PaketPriceTableCell: UITableViewCell {
         beforePriceLabel.attributedText = attributeString
 
         afterPriceLabel.text = "Rp.\(model.afterPrice)"
+        afterPriceLabel.textColor = UIColor.red
         if model.afterPrice == "" {
             beforePriceLabel.isHidden = true
             afterPriceLabel.text = "Free"

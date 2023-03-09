@@ -41,6 +41,8 @@ class CarouselCollectionCell: UICollectionViewCell {
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.frame = bgView.bounds
         bgView.layer.insertSublayer(gradientLayer, at: 0)
+        carouselTitle.textColor = UIColor.white
+        carouselSubTitle.textColor = UIColor.white
 
     }
     

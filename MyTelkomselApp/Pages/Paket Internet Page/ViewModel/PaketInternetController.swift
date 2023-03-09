@@ -142,7 +142,6 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            
             return cell
         case .listLangganan:
             guard let cell = paketInternetTable.dequeueReusableCell(withIdentifier: LanggananTableCell.identifier) as? LanggananTableCell else {
@@ -240,23 +239,40 @@ extension PaketInternetController: PaketProtocol {
     }
     
     func paketModel() {
-        let data1 = MyTelkomselApp.PaketModel(besarPaket: "14 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
-            RincianPaketModel(internetLabel: "1.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
+        let data1 = MyTelkomselApp.PaketModel(besarPaket: "14 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", isBelajar: false, rincianPaket: [
+            RincianPaketModel(internetLabel: "1.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: """
+Kuota Internet dapat digunakan di semua jaringan 2G/3G/4G/5G.",
+"Telepon ke sesama pelanggan Telkomsel.",
+
+"SMS ke sesama pelanggan Telkomsel.",
+
+"Kuota utama akan menjadi prioritas konsumsi pertama bagi pelanggan, kemudian diikuti kuota Apps untuk beberapa Apps sesuai ketentuan.",
+
+"Kuota Apps akan otomatis dapat digunakan jika kuota utama telah habis pada aplikasi sesuai ketentuan yaitu: WhatsApp, LINE, MusicMAX, GamesMAX, MAXstream, Facebook, Instagram, YouTube, TikTok dan Zoom.",
+
+"Akses Internet ke kuota Apps berlaku kuota pemakaian batas wajar. Bila kuota pemakaian batas wajar sudah habis, kecepatan akan disusaikan menjadi 128 kbps (tanpa memotong pulsa pelanggan) selama masa aktif paket berlaku.",
+
+"Akses internet ke aplikasi lain diluar kuota Apps jika kuota utama telah habis tetap bisa dilakukan dengan kecepatan maksimum 128 kbps (tanpa memotong pulsa pelanggan) selama masa aktif paket masih berlaku.
+""")
         ])
         
-        let data2 = MyTelkomselApp.PaketModel(besarPaket: "20 GB", beforePrice: "98.000", afterPrice: "90.000", namaPaket: "Internet OMG!", durasiPaket: "7 Hari", rincianPaket: [
+        let data2 = MyTelkomselApp.PaketModel(besarPaket: "20 GB", beforePrice: "98.000", afterPrice: "90.000", namaPaket: "Internet OMG!", durasiPaket: "7 Hari", isBelajar: false, rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data3 = MyTelkomselApp.PaketModel(besarPaket: "27 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data3 = MyTelkomselApp.PaketModel(besarPaket: "27 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari",isBelajar: false, rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data4 = MyTelkomselApp.PaketModel(besarPaket: "30 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data4 = MyTelkomselApp.PaketModel(besarPaket: "30 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari",isBelajar: false, rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data5 = MyTelkomselApp.PaketModel(besarPaket: "37 GB", beforePrice: "", afterPrice: "", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data5 = MyTelkomselApp.PaketModel(besarPaket: "57 GB", beforePrice: "", afterPrice: "", namaPaket: "Internet OMG!", durasiPaket: "30 Hari",isBelajar: true, rincianPaket: [
+            RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
+        ])
+        
+        let data6 = MyTelkomselApp.PaketModel(besarPaket: "137 GB", beforePrice: "", afterPrice: "", namaPaket: "Internet OMG!", durasiPaket: "30 Hari",isBelajar: true, rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         paketInternetDatas.append(data1)
@@ -264,6 +280,7 @@ extension PaketInternetController: PaketProtocol {
         paketInternetDatas.append(data3)
         paketInternetDatas.append(data4)
         paketInternetDatas.append(data5)
+        paketInternetDatas.append(data6)
     }
     
     

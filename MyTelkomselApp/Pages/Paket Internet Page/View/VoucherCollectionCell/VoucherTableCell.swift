@@ -74,7 +74,7 @@ extension VoucherTableCell: UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 1.5, height: 100)
+        return CGSize(width: collectionView.frame.width / 1.5, height: 150)
     }
     
 }
