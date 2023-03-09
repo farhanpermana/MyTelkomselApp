@@ -32,7 +32,11 @@ class PaketInternetController: UIViewController, moveToBeliPaketPageDelegate {
     
     var paketInternetDatas: [PaketModel] = []
     
+    var rincianDatas: [RincianPaketModel] = []
+    
     var datasCarousel: [CarouselModel] = []
+    
+    var datasVoucher: [VoucherModels] = []
     
     var delegate: moveToBeliPaketPageDelegate?
     
@@ -71,6 +75,8 @@ class PaketInternetController: UIViewController, moveToBeliPaketPageDelegate {
         paketInternetTable.delegate = self
         paketInternetTable.dataSource = self
         paketModel()
+        carouselModel()
+        voucherModel()
     }
     
     // page trans func
@@ -174,7 +180,7 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
                     VoucherTableCell else {
                 return UITableViewCell()
             }
-            
+            cell.voucherDatas = datasVoucher
             cell.setupTable()
             return cell
 
@@ -218,35 +224,39 @@ extension PaketInternetController: UITableViewDelegate, UITableViewDataSource {
 extension PaketInternetController: PaketProtocol {
     func carouselModel() {
         let carousel1 = CarouselModel(imageLabel: "carousel1", titleLabel: "Internet OMG!", subTitleLabel: "Bisa YouTube dan Sosmed")
-        let carousel2 = CarouselModel(imageLabel: "carousel1", titleLabel: "Internet OMG!", subTitleLabel: "Bisa YouTube dan Sosmed")
+        let carousel2 = CarouselModel(imageLabel: "carousel2", titleLabel: "Undian Ketengan", subTitleLabel: "Beli kuota Ketengan")
         datasCarousel.append(carousel1)
         datasCarousel.append(carousel2)
     }
     
     func voucherModel() {
         
-//        let data1 = VoucherModels(bannerLabel: "banner1", titleLabel: "Internet OMG!", gradientView: "gradient1")
+        let data1 = VoucherModels(bannerLabel: "voucher1", titleLabel: "Double Benefits from DOUBLE UNTUNG")
+        let data2 = VoucherModels(bannerLabel: "voucher2", titleLabel: "Join Undi-Undi Hepi 2020!")
+        datasVoucher.append(data1)
+        datasVoucher.append(data2)
+        
         
     }
     
     func paketModel() {
-        let data1 = MyTelkomselApp.PaketModel(besarPaket: "14 GB", beforePrice: 99.000, afterPrice: 96.000, namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data1 = MyTelkomselApp.PaketModel(besarPaket: "14 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+            RincianPaketModel(internetLabel: "1.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
+        ])
+        
+        let data2 = MyTelkomselApp.PaketModel(besarPaket: "20 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "7 Hari", rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data2 = MyTelkomselApp.PaketModel(besarPaket: "20 GB", beforePrice: 99.000, afterPrice: 96.000, namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data3 = MyTelkomselApp.PaketModel(besarPaket: "27 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data3 = MyTelkomselApp.PaketModel(besarPaket: "27 GB", beforePrice: 99.000, afterPrice: 96.000, namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data4 = MyTelkomselApp.PaketModel(besarPaket: "30 GB", beforePrice: "99.000", afterPrice: "96.000", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         
-        let data4 = MyTelkomselApp.PaketModel(besarPaket: "30 GB", beforePrice: 99.000, afterPrice: 96.000, namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
-            RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
-        ])
-        
-        let data5 = MyTelkomselApp.PaketModel(besarPaket: "37 GB", beforePrice: 99.000, afterPrice: 96.000, namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
+        let data5 = MyTelkomselApp.PaketModel(besarPaket: "37 GB", beforePrice: "", afterPrice: "", namaPaket: "Internet OMG!", durasiPaket: "30 Hari", rincianPaket: [
             RincianPaketModel(internetLabel: "4.5 GB", omgLabel: "2 GB", smsTselLabel: "60 SMS", voiceTsel: "100 Mins", descPaket: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
         ])
         paketInternetDatas.append(data1)

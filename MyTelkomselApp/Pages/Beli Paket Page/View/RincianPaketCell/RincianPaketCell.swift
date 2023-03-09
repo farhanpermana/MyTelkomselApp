@@ -11,6 +11,8 @@ class RincianPaketCell: UITableViewCell {
     
     static let identifier = "RincianPaketCell"
     
+    var datasRincian: [RincianPaketModel] = []
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var internetLabel: UILabel!
@@ -48,6 +50,13 @@ class RincianPaketCell: UITableViewCell {
         voiceTselValueLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         
         
+    }
+    
+    func config(model: RincianPaketModel) {
+        internetValueLabel.text = model.internetLabel
+        omgValueLabel.text = model.omgLabel
+        smsTselValueLabel.text = model.smsTselLabel
+        voiceTselLabel.text = model.voiceTsel
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

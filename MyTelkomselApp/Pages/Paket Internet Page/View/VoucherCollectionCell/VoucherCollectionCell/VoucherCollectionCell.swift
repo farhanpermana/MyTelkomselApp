@@ -22,9 +22,14 @@ class VoucherCollectionCell: UICollectionViewCell {
     
     func setupCell() {
         self.layer.cornerRadius = 4
-        self.layer.backgroundColor = UIColor.blue.cgColor
+//        self.layer.backgroundColor = UIColor.blue.cgColor
         self.layer.borderWidth = 1.0
         self.layer.masksToBounds = true
+    }
+    
+    func config(model: VoucherModels) {
+        voucherImage.image = UIImage(named: model.bannerLabel)
+        voucherName.text = model.titleLabel
     }
 
 }

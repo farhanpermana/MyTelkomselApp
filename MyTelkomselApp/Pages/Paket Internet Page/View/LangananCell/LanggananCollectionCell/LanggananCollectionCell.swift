@@ -66,15 +66,24 @@ class LanggananCollectionCell: UICollectionViewCell {
     }
 
     func config(model: PaketModel, hideBookmark: Bool) {
+        
+        
+        
         bookmarkIcon.isHidden = hideBookmark
         gbPaketLabel.text = model.besarPaket
+        durasiLabel.text = model.durasiPaket
         
         // strikethrough label
         let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: "Rp.\(model.beforePrice)")
             attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
         beforePriceLabel.attributedText = attributeString
 
-        afterPriceLabel.text = "Rp. \(model.afterPrice)"
+//        afterPriceLabel.text = "Rp. \(model.afterPrice)"
+        if model.afterPrice == "" {
+            beforePriceLabel.isHidden = true
+            afterPriceLabel.text = "Free"
+        }
+        
         internetOmgLabel.text = model.namaPaket
         
         

@@ -56,7 +56,7 @@ class BeliPaketController: UIViewController, moveToPembayaranBerhasilPageDelegat
     
     func moveToPembayaranBerhasilPage() {
         let vc = PembayaranBerhasilController()
-        vc.datasPaket = self.paketDatas
+        vc.datasPaket = paketDatas
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -65,7 +65,13 @@ class BeliPaketController: UIViewController, moveToPembayaranBerhasilPageDelegat
 
 extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        let sections = BeliPaketSections(rawValue: section)
+        switch sections {
+        case .rincianPaket:
+            return beliPaket?.rincianPaket.count ?? 0
+        default:
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -88,6 +94,9 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sections = BeliPaketSections(rawValue: indexPath.section)
+        
+        guard let rincianPaket = self.beliPaket else { return UITableViewCell() }
+        
         switch sections {
         case .paketPrice:
             guard let cell = beliPaketTableView.dequeueReusableCell(withIdentifier: PaketPriceTableCell.identifier, for: indexPath) as? PaketPriceTableCell else { return UITableViewCell()
@@ -106,6 +115,7 @@ extension BeliPaketController: UITableViewDelegate, UITableViewDataSource {
             else {
                 return UITableViewCell()
             }
+            cell.config(model: beliPaket!.rincianPaket[indexPath.row])
 //            cell.rincianPaketLabel.text = beliPaket?.rincianPaket
             return cell
         case .descPaket:

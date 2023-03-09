@@ -10,6 +10,8 @@ import UIKit
 class VoucherTableCell: UITableViewCell {
     
     static let identifier = "VoucherTableCell"
+    
+    var voucherDatas: [VoucherModels] = []
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,6 +43,7 @@ class VoucherTableCell: UITableViewCell {
         contentView.addSubview(collectionView)
         setupCollectionView()
         collectionView.backgroundColor = UIColor.clear
+        collectionView.reloadData()
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -55,14 +58,15 @@ class VoucherTableCell: UITableViewCell {
 
 extension VoucherTableCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return voucherDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VoucherCollectionCell.identifier, for: indexPath) as? VoucherCollectionCell else {
             return UICollectionViewCell()
         }
-        
+        cell.config(model: voucherDatas[indexPath.row])
+        cell.setupCell()
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

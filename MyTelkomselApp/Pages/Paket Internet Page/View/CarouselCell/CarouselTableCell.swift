@@ -76,6 +76,9 @@ extension CarouselTableCell: UICollectionViewDataSource, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width / 1.5, height: 100)
     }
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        1
+//    }
     
     
 }

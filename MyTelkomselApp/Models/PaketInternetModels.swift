@@ -9,8 +9,8 @@ import Foundation
 
 struct PaketModel {
     let besarPaket: String
-    let beforePrice: Double
-    let afterPrice: Double
+    let beforePrice: String
+    let afterPrice: String
     let namaPaket: String
     let durasiPaket: String
     let rincianPaket: [RincianPaketModel]

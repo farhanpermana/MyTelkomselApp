@@ -13,6 +13,8 @@ class LanggananTableCell: UITableViewCell {
     
     var namaPaketDatas: [PaketModel] = []
     
+    var rincianDatas: [RincianPaketModel] = []
+    
     var moveToBeliPaketDelegate: moveToBeliPaketPageDelegate?
     
     private var collectionView: UICollectionView = {
