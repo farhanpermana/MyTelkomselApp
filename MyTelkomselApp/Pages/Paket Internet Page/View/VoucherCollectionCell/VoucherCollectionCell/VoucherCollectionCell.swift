@@ -23,7 +23,7 @@ class VoucherCollectionCell: UICollectionViewCell {
     func setupCell() {
         self.layer.cornerRadius = 4
 //        self.layer.backgroundColor = UIColor.blue.cgColor
-        self.layer.borderWidth = 0
+        self.layer.borderWidth = 1
         self.layer.masksToBounds = true
         bgView.backgroundColor = UIColor.white
         bgView.clipsToBounds = false

@@ -28,7 +28,7 @@ class BeliSekarangCell: UITableViewCell {
         beliButton.layer.cornerRadius = 4
         beliButton.tintColor = UIColor.red
         beliButton.setTitle("Beli Sekarang", for: .normal)
-        beliButton.frame = CGRect(x: 0, y: 0, width: 335, height: 02)
+        beliButton.frame.size.height = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

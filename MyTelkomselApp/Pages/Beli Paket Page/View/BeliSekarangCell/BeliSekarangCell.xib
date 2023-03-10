@@ -27,7 +27,6 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="5ng-Xe-gcb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7dk-qs-3Kh"/>
-                    <constraint firstAttribute="bottom" secondItem="5ng-Xe-gcb" secondAttribute="bottom" constant="11" id="Nm3-Ew-N7M"/>
                     <constraint firstAttribute="trailing" secondItem="5ng-Xe-gcb" secondAttribute="trailing" constant="16" id="rmx-V0-hoh"/>
                     <constraint firstItem="5ng-Xe-gcb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="zIb-Jx-hEU"/>
                 </constraints>
